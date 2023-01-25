@@ -60,4 +60,6 @@ def reversed_str(string):
 # will be the default. the -1, will step from the end of the string value
 # this then returns a reversed string 
 
+def fahrenheit_to_celsius(temp):
+    return (temp - 32) * 5/9
 
