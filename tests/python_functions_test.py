@@ -33,12 +33,13 @@ class TestPythonFunctionPractice(unittest.TestCase):
 
 # ------------
 
+  @unittest.skip("delete this line to run the test")
   def test_length_of_string(self):
       test_string = "A string of length 21"
       string_length = length_of_string( test_string )
       self.assertEqual( 21, string_length )
 
-
+# ------------
 
   @unittest.skip("delete this line to run the test")
   def test_join_string(self):
@@ -47,12 +48,12 @@ class TestPythonFunctionPractice(unittest.TestCase):
       joined_string = join_string( string_1, string_2 )
       self.assertEqual( "Mary had a little lamb, its fleece was white as snow", joined_string )
 
-  @unittest.skip("delete this line to run the test")
+
   def test_add_string_as_number(self):
       add_result = add_string_as_number( "1", "2" )
       self.assertEqual( 3, add_result )
 
-  @unittest.skip("delete this line to run the test")
+ 
   def test_number_to_full_name__month_1(self):
       result = number_to_full_month_name( 1 )
       self.assertEqual( "January", result )
