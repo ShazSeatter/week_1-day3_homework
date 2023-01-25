@@ -53,7 +53,11 @@ def vol_cube(length):
     return length**3
 
 
+def reversed_str(string):
+    return string[::-1]
 
-
+# slice[::[value]], dont need a starting and end value. 
+# will be the default. the -1, will step from the end of the string value
+# this then returns a reversed string 
 
 

@@ -90,10 +90,11 @@ class TestPythonFunctionPractice(unittest.TestCase):
     pass
 
   #Given a String, return the String reversed
-  @unittest.skip("delete this line to run the test")
   def test_reverse_string(self):
+    str_value = "This is a string"
+    reversed_string = reversed_str(str_value)
+    self.assertEqual( "gnirts a si sihT", reversed_string)
     #add test code here
-    
     pass
 
 # conversion
