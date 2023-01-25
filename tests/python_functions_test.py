@@ -33,7 +33,6 @@ class TestPythonFunctionPractice(unittest.TestCase):
 
 # ------------
 
-  @unittest.skip("delete this line to run the test")
   def test_length_of_string(self):
       test_string = "A string of length 21"
       string_length = length_of_string( test_string )
