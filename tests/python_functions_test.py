@@ -37,7 +37,6 @@ class TestPythonFunctionPractice(unittest.TestCase):
       string_length = length_of_string( test_string )
       self.assertEqual( 21, string_length )
 
-# ------------
 
   def test_join_string(self):
       string_1 = "Mary had a little lamb, "
@@ -55,27 +54,27 @@ class TestPythonFunctionPractice(unittest.TestCase):
       result = number_to_full_month_name( 1 )
       self.assertEqual( "January", result )
 
-  @unittest.skip("delete this line to run the test")
+
   def test_number_to_full_name__month_3(self):
       result = number_to_full_month_name( 3 )
       self.assertEqual( "March", result )
 
-  @unittest.skip("delete this line to run the test")
+  
   def test_number_to_full_name__month_9(self):
       result = number_to_full_month_name( 9 )
       self.assertEqual( "September", result )
 
-  @unittest.skip("delete this line to run the test")
+  
   def test_number_to_short_month_name__month_1(self):
       first_month_string = number_to_short_month_name( 1 )
       self.assertEqual( "Jan", first_month_string )
 
-  @unittest.skip("delete this line to run the test")
+  
   def test_number_to_short_month_name__month_4(self):
       fourth_month_string = number_to_short_month_name( 4 )
       self.assertEqual( "Apr", fourth_month_string )
 
-  @unittest.skip("delete this line to run the test")
+  
   def test_number_to_short_month_name__month_10(self):
       tenth_month_string = number_to_short_month_name( 10 )
       self.assertEqual( "Oct", tenth_month_string )
