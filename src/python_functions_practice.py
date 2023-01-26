@@ -38,17 +38,24 @@ def number_to_full_month_name(number):
         return "January"
     elif number == 3:
         return "March"
+    elif number == 4:
+        return "April"
     elif number == 9:
         return "September"
+    elif number == 10:
+        return "October"
 
 
-def number_to_short_month_name(month_num):
-    if month_num == 1:
-        return "Jan"
-    elif month_num == 4:
-        return "Apr"
-    elif month_num == 10:
-        return "Oct"   
+# def number_to_short_month_name(month_num):
+#     if month_num == 1:
+#         return "Jan"
+#     elif month_num == 4:
+#         return "Apr"
+#     elif month_num == 10:
+#         return "Oct"   
+
+def number_to_short_month_name(number):
+    return number_to_full_month_name(number)[0:3]
 
 # --------------- 
 
@@ -62,6 +69,7 @@ def reversed_str(string):
 # slice[::[value]], dont need a starting and end value. 
 # will be the default. the -1, will step from the end of the string value
 # this then returns a reversed string 
+
 
 def fahrenheit_to_celsius(temp):
     return (temp - 32) * 5/9
